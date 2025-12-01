@@ -1,7 +1,7 @@
 package main
 
 import (
-	"aoc-2020-go/utils"
+	"aoc-2025-go/utils"
 	"fmt"
 )
 
@@ -11,10 +11,9 @@ func part1(path string) int {
 		return 0
 	}
 
-	for _, line := range lines {
-		fmt.Println(line)
-	}
-	return 0
+	fmt.Printf("Processed %v lines", len(lines))
+
+	return 99
 
 }
 
@@ -24,10 +23,8 @@ func part2(path string) int {
 		return 0
 	}
 
-	for _, line := range lines {
-		fmt.Println(line)
-	}
-	return 0
+	fmt.Printf("Processed %v lines", len(lines))
+	return 99
 
 }
 
