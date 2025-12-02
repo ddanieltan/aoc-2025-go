@@ -12,7 +12,9 @@ func ReadString(path string) (string, error) {
 	if err != nil {
 		panic(err)
 	}
-	return string(bytes), nil
+	str := string(bytes)
+	str = strings.TrimSuffix(str, "\n")
+	return str, nil
 }
 
 func ReadLines(path string) ([]string, error) {
