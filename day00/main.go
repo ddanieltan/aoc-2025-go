@@ -29,8 +29,6 @@ func part2(path string) int {
 }
 
 func main() {
-	part1 := part1("input.txt")
-	part2 := part2("input.txt")
-	fmt.Println(part1)
-	fmt.Println(part2)
+	fmt.Println(part1("input.txt"))
+	fmt.Println(part2("input.txt"))
 }
